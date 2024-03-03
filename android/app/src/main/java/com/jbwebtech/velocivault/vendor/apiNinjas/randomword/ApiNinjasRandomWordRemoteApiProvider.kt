@@ -8,6 +8,9 @@ import com.jbwebtech.velocivault.providers.RandomWordProvider
 import com.jbwebtech.velocivault.vendor.apiNinjas.ApiNinjasConstants
 
 
+/**
+ * Source: https://api-ninjas.com/api/randomword
+ */
 class ApiNinjasRandomWordRemoteApiProvider : RandomWordProvider {
 
     private val url = "${ApiNinjasConstants().apiRoot}/v1/randomword"
