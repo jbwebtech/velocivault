@@ -15,6 +15,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import kotlin.random.Random
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -53,11 +54,35 @@ class FirstFragment : Fragment() {
         GlobalScope.launch(Dispatchers.IO) {
             try {
                 // Perform network request on IO thread
-                val result: Word = randomWordProvider.getWord()
-                if (result.word.isNotEmpty()) {
+                val noun: Word = randomWordProvider.getWord(Word.Type.NOUN)
+                val verb: Word = randomWordProvider.getWord(Word.Type.ADVERB)
+                val adjective: Word = randomWordProvider.getWord(Word.Type.ADJECTIVE)
+                var phrase = ""
+
+                if (adjective.word.isNotEmpty()) {
+                    phrase += adjective.word.replaceFirstChar { c -> c.uppercase() }
+                }
+
+                if (noun.word.isNotEmpty()) {
+                    phrase += noun.word.replaceFirstChar { c -> c.uppercase() }
+                }
+
+                if (verb.word.isNotEmpty()) {
+                    phrase += verb.word.replaceFirstChar { c -> c.uppercase() }
+                }
+
+                for (i in 1..5) {
+                    phrase += Random.nextInt(0, 10)
+                }
+
+                for (i in 1..5) {
+                    phrase += "!@#$%^&*()-_+=<>?/[]{}|".random()
+                }
+
+                if (phrase.isNotEmpty()) {
                     // Switch to the main UI thread to update the UI
                     withContext(Dispatchers.Main) {
-                        binding.textviewFirst.text = result.word
+                        binding.textviewFirst.text = phrase
                     }
                 } else {
                     Log.i(
