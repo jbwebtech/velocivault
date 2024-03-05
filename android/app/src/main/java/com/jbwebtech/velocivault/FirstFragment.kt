@@ -52,37 +52,47 @@ class FirstFragment : Fragment() {
         val randomWordProvider: RandomWordProvider = ApiNinjasRandomWordRemoteApiProvider()
 
         GlobalScope.launch(Dispatchers.IO) {
+            // Perform network request on IO thread
             try {
-                // Perform network request on IO thread
-                val noun: Word = randomWordProvider.getWord(Word.Type.NOUN)
-                val verb: Word = randomWordProvider.getWord(Word.Type.ADVERB)
-                val adjective: Word = randomWordProvider.getWord(Word.Type.ADJECTIVE)
-                var phrase = ""
 
-                if (adjective.word.isNotEmpty()) {
-                    phrase += adjective.word.replaceFirstChar { c -> c.uppercase() }
+                val phrases: MutableList<String> = mutableListOf<String>()
+
+                for (i in 1..10) {
+                    var phrase = ""
+                    val noun: Word = randomWordProvider.getWord(Word.Type.NOUN)
+                    val verb: Word = randomWordProvider.getWord(Word.Type.ADVERB)
+                    val adjective: Word = randomWordProvider.getWord(Word.Type.ADJECTIVE)
+
+                    if (adjective.word.isNotEmpty()) {
+                        phrase += adjective.word.replaceFirstChar { c -> c.uppercase() }
+                    }
+
+                    if (noun.word.isNotEmpty()) {
+                        phrase += noun.word.replaceFirstChar { c -> c.uppercase() }
+                    }
+
+                    if (verb.word.isNotEmpty()) {
+                        phrase += verb.word.replaceFirstChar { c -> c.uppercase() }
+                    }
+
+                    for (i in 1..5) {
+                        phrase += Random.nextInt(0, 10)
+                    }
+
+                    for (i in 1..5) {
+                        phrase += "!@#$%^&*()-_+=<>?/[]{}|".random()
+                    }
+
+                    if (phrase.isNotEmpty()) {
+                        phrases.add(phrase)
+                    }
                 }
 
-                if (noun.word.isNotEmpty()) {
-                    phrase += noun.word.replaceFirstChar { c -> c.uppercase() }
-                }
+                if (phrases.isNotEmpty()) {
 
-                if (verb.word.isNotEmpty()) {
-                    phrase += verb.word.replaceFirstChar { c -> c.uppercase() }
-                }
-
-                for (i in 1..5) {
-                    phrase += Random.nextInt(0, 10)
-                }
-
-                for (i in 1..5) {
-                    phrase += "!@#$%^&*()-_+=<>?/[]{}|".random()
-                }
-
-                if (phrase.isNotEmpty()) {
                     // Switch to the main UI thread to update the UI
                     withContext(Dispatchers.Main) {
-                        binding.textviewFirst.text = phrase
+                        binding.textviewFirst.text = phrases.joinToString("\n")
                     }
                 } else {
                     Log.i(
