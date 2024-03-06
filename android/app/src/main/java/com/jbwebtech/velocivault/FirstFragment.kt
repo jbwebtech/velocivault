@@ -21,9 +21,9 @@ import kotlin.random.Random
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
 class FirstFragment : Fragment() {
-
-    companion object {
+    private companion object {
         private val TAG: String = FirstFragment::class.simpleName ?: "N/A"
+        private const val NUM_PASSPHRASES = 2
     }
 
     private var _binding: FragmentFirstBinding? = null
@@ -57,7 +57,7 @@ class FirstFragment : Fragment() {
 
                 val phrases: MutableList<String> = mutableListOf<String>()
 
-                for (i in 1..10) {
+                for (i in 1..NUM_PASSPHRASES) {
                     var phrase = ""
                     val noun: Word = randomWordProvider.getWord(Word.Type.NOUN)
                     val verb: Word = randomWordProvider.getWord(Word.Type.ADVERB)
