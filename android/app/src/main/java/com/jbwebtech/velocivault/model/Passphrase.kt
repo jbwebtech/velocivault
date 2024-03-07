@@ -1,15 +1,16 @@
 package com.jbwebtech.velocivault.model
 
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import java.time.LocalDateTime
 import java.util.UUID
 
+@Entity
 data class Passphrase(
-    val id: UUID,
-    val username: String,
-    val passphrase: String,
-    val email: String?,
-    val label: String?,
-    val description: String?,
-    val created: LocalDateTime,
-    val retired: Boolean
+    @PrimaryKey val id: Int,
+    @ColumnInfo(name = "username") val username: String,
+    @ColumnInfo(name = "passphrase") val passphrase: String,
+    @ColumnInfo(name = "created") val created: LocalDateTime,
+    @ColumnInfo(name = "retired") val retired: Boolean
 )
