@@ -11,6 +11,7 @@ import com.jbwebtech.velocivault.databinding.FragmentFirstBinding
 import com.jbwebtech.velocivault.model.Word
 import com.jbwebtech.velocivault.providers.RandomWordProvider
 import com.jbwebtech.velocivault.vendor.apiNinjas.randomword.ApiNinjasRandomWordRemoteApiProvider
+import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -35,19 +36,17 @@ class FirstFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
         _binding = FragmentFirstBinding.inflate(inflater, container, false)
         return binding.root
-
     }
 
+    @OptIn(DelicateCoroutinesApi::class)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonFirst.setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
-
 
         val randomWordProvider: RandomWordProvider = ApiNinjasRandomWordRemoteApiProvider()
 
@@ -75,11 +74,11 @@ class FirstFragment : Fragment() {
                         phrase += verb.word.replaceFirstChar { c -> c.uppercase() }
                     }
 
-                    for (i in 1..5) {
+                    for (a in 1..5) {
                         phrase += Random.nextInt(0, 10)
                     }
 
-                    for (i in 1..5) {
+                    for (b in 1..5) {
                         phrase += "!@#$%^&*()-_+=<>?/[]{}|".random()
                     }
 
@@ -105,8 +104,6 @@ class FirstFragment : Fragment() {
                 // Handle errors as needed
             }
         }
-
-
     }
 
     override fun onDestroyView() {
