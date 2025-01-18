@@ -1,0 +1,60 @@
+# Ignore project secrets
+**/secrets.properties
+**/local.properties
+
+
+# Ignore build artifacts
+build/
+buildSrc/
+local.properties
+*.iml
+
+# Ignore IDE settings
+.vscode/
+.idea/
+.gradle/
+*.ipynb
+*.sublime-project
+*.sublime-workspace
+
+# Ignore tests
+androidTest/
+test/
+androidTests/
+tests/
+
+# Ignore build tools
+.gitignore
+*.keystore
+*.jks
+gradle/
+gradlew
+gradlew.bat
+
+# Ignore generated files
+*.generated.*
+generated/
+Generated/
+gen/
+out/
+target/
+
+# Ignore temporary files
+*.swp
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Ignore node_modules
+node_modules/
+
+# Ignore log files
+npm-debug.log
+yarn-error.log
+
+# Ignore cache
+.cache/
+.cache-test-results/
