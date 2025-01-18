@@ -1,5 +1,12 @@
 {
     "cSpell.words": [
-        "jbwebtech"
+        "androidx",
+        "appcompat",
+        "constraintlayout",
+        "databinding",
+        "gson",
+        "jbwebtech",
+        "proguard",
+        "velocivault"
     ]
 }

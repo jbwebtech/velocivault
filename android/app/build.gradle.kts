@@ -10,7 +10,7 @@ android {
     android.buildFeatures.buildConfig = true
 
     namespace = "com.jbwebtech.velocivault"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.jbwebtech.velocivault"
@@ -60,7 +60,7 @@ android {
     buildFeatures {
         viewBinding = true
     }
-    buildToolsVersion = "34.0.0"
+    buildToolsVersion = "35.0.0"
 }
 
 dependencies {
