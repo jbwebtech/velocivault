@@ -2,3 +2,10 @@
 /shelf/
 /workspace.xml
 usage.statistics.xml
+
+deploymentTargetSelector.xml
+appInsightsSettings.xml
+codeStyles/codeStyleConfig.xml
+codeStyles/Project.xml
+runConfigurations.xml
+studiobot.xml
