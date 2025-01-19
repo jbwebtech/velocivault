@@ -3,8 +3,8 @@ package com.jbwebtech.velocivault.vendor.apiNinjas.randomword
 import com.github.kittinunf.fuel.Fuel
 import com.github.kittinunf.fuel.core.Parameters
 import com.github.kittinunf.fuel.gson.responseObject
-import com.jbwebtech.velocivault.model.Word
-import com.jbwebtech.velocivault.model.enum.WordType
+import com.velocivault.lib.model.Word
+import com.velocivault.lib.model.WordType
 import com.jbwebtech.velocivault.providers.RandomWordProvider
 import com.jbwebtech.velocivault.vendor.apiNinjas.ApiNinjasConstants
 

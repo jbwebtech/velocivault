@@ -35,6 +35,7 @@ android {
                 "proguard-rules.pro"
             )
         }
+
         debug {
         }
     }
@@ -42,16 +43,21 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+
     kotlinOptions {
         jvmTarget = "17"
     }
+
     buildFeatures {
         viewBinding = true
     }
+
     buildToolsVersion = "35.0.0"
 }
 
 dependencies {
+
+    implementation(project(":lib-model"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -60,11 +66,9 @@ dependencies {
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
 
-
     implementation(libs.androidx.room.runtime)
     annotationProcessor(libs.androidx.room.compiler)
 
-    
     implementation(libs.fuel)
     implementation(libs.fuel.gson)
     implementation(libs.gson)

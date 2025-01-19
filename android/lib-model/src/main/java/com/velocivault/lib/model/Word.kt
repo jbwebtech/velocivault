@@ -1,7 +1,6 @@
-package com.jbwebtech.velocivault.model
+package com.velocivault.lib.model
 
 import com.google.gson.annotations.SerializedName
-import com.jbwebtech.velocivault.model.enum.WordType
 
 @Suppress("unused")
 data class Word(@SerializedName("word") private val words: List<String>, private val type: WordType) {

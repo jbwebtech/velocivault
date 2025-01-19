@@ -1,4 +1,4 @@
-package com.jbwebtech.velocivault.model.enum
+package com.velocivault.lib.model
 
 @Suppress("unused")
 enum class WordType {
