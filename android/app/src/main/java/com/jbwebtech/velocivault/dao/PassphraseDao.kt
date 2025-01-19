@@ -8,6 +8,7 @@ import androidx.room.Update
 import com.jbwebtech.velocivault.Passphrase
 
 @Dao
+@Suppress("unused")
 interface PassphraseDao {
     @Query("SELECT * FROM passphrase")
     fun getAll(): List<Passphrase>
