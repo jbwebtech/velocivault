@@ -3,7 +3,6 @@ package com.jbwebtech.velocivault
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -11,7 +10,6 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.google.android.material.snackbar.Snackbar
 import com.jbwebtech.velocivault.databinding.ActivityMainBinding
-import com.jbwebtech.velocivault.factory.PassphraseFactory
 
 /**
  * VelociVault Main Activity
