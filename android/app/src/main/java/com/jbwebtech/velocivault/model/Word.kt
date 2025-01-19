@@ -1,9 +1,20 @@
 package com.jbwebtech.velocivault.model
 
 import com.google.gson.annotations.SerializedName
+import com.jbwebtech.velocivault.model.enum.WordType
 
-data class Word(@SerializedName("word") val word: String) {
-    enum class Type {
-        UNKNOWN, ADJECTIVE, ADVERB, NOUN, VERB
+data class Word(@SerializedName("word") private val words: List<String>, private val type: WordType) {
+
+    fun getType(): WordType {
+        return type
     }
+
+    fun getWords(): List<String> {
+        return words
+    }
+
+    fun getFirst(): String {
+        return if (words.isEmpty()) "" else words[0]
+    }
+
 }

@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.jbwebtech.velocivault.databinding.FragmentFirstBinding
 import com.jbwebtech.velocivault.model.Word
+import com.jbwebtech.velocivault.model.enum.WordType
 import com.jbwebtech.velocivault.providers.RandomWordProvider
 import com.jbwebtech.velocivault.vendor.apiNinjas.randomword.ApiNinjasRandomWordRemoteApiProvider
 import kotlinx.coroutines.DelicateCoroutinesApi
@@ -24,7 +25,7 @@ import kotlin.random.Random
 class FirstFragment : Fragment() {
     private companion object {
         private val TAG: String = FirstFragment::class.simpleName ?: "N/A"
-        private const val NUM_PASSPHRASES = 2
+        private const val NUM_PASSPHRASES = 1
     }
 
     private var _binding: FragmentFirstBinding? = null
@@ -58,20 +59,25 @@ class FirstFragment : Fragment() {
 
                 for (i in 1..NUM_PASSPHRASES) {
                     var phrase = ""
-                    val noun: Word = randomWordProvider.getWord(Word.Type.NOUN)
-                    val verb: Word = randomWordProvider.getWord(Word.Type.ADVERB)
-                    val adjective: Word = randomWordProvider.getWord(Word.Type.ADJECTIVE)
+                    val noun: Word = randomWordProvider.getWord(WordType.NOUN)
+                    val verb: Word = randomWordProvider.getWord(WordType.VERB)
+                    val adverb: Word = randomWordProvider.getWord(WordType.ADVERB)
+                    val adjective: Word = randomWordProvider.getWord(WordType.ADJECTIVE)
 
-                    if (adjective.word.isNotEmpty()) {
-                        phrase += adjective.word.replaceFirstChar { c -> c.uppercase() }
+                    if (adjective.getFirst().isNotEmpty()) {
+                        phrase += adjective.getFirst().replaceFirstChar { c -> c.uppercase() }
                     }
 
-                    if (noun.word.isNotEmpty()) {
-                        phrase += noun.word.replaceFirstChar { c -> c.uppercase() }
+                    if (noun.getFirst().isNotEmpty()) {
+                        phrase += noun.getFirst().replaceFirstChar { c -> c.uppercase() }
                     }
 
-                    if (verb.word.isNotEmpty()) {
-                        phrase += verb.word.replaceFirstChar { c -> c.uppercase() }
+                    if (verb.getFirst().isNotEmpty()) {
+                        phrase += verb.getFirst().replaceFirstChar { c -> c.uppercase() }
+                    }
+
+                    if (adverb.getFirst().isNotEmpty()) {
+                        phrase += adverb.getFirst().replaceFirstChar { c -> c.uppercase() }
                     }
 
                     for (a in 1..5) {
@@ -100,7 +106,8 @@ class FirstFragment : Fragment() {
                     )
                 }
             } catch (e: Exception) {
-                e.printStackTrace()
+                Log.e(TAG, "onViewCreated: " + e.localizedMessage, e)
+//                e.printStackTrace()
                 // Handle errors as needed
             }
         }

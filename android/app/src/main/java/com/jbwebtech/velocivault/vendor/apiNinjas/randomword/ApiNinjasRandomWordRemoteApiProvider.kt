@@ -4,6 +4,7 @@ import com.github.kittinunf.fuel.Fuel
 import com.github.kittinunf.fuel.core.Parameters
 import com.github.kittinunf.fuel.gson.responseObject
 import com.jbwebtech.velocivault.model.Word
+import com.jbwebtech.velocivault.model.enum.WordType
 import com.jbwebtech.velocivault.providers.RandomWordProvider
 import com.jbwebtech.velocivault.vendor.apiNinjas.ApiNinjasConstants
 
@@ -21,7 +22,7 @@ class ApiNinjasRandomWordRemoteApiProvider : RandomWordProvider {
         return callRemoteApi(parameters)
     }
 
-    override fun getWord(type: Word.Type): Word {
+    override fun getWord(type: WordType): Word {
         val parameters: Parameters = listOf("type" to type)
         return callRemoteApi(parameters)
     }
@@ -30,7 +31,7 @@ class ApiNinjasRandomWordRemoteApiProvider : RandomWordProvider {
         val (_, _, result) = Fuel.get(url, parameters).header(headers).responseObject<Word>()
 
         return when (result) {
-            is com.github.kittinunf.result.Result.Success -> Word(result.get().word)
+            is com.github.kittinunf.result.Result.Success -> result.get()
             is com.github.kittinunf.result.Result.Failure -> throw RuntimeException("Failed to fetch random word: " + result.error)
         }
     }
