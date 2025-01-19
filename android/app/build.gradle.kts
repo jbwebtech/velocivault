@@ -22,18 +22,8 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
         // Load properties
-        var apiKey = "YOUR_API_KEY"
-        try {
-            val keystoreFile = project.rootProject.file("secrets.properties")
-            val properties = Properties()
-            properties.load(keystoreFile.inputStream())
-            val p = properties.getProperty("api_key")
-            if (null != p) {
-                apiKey = p
-            }
-        } catch (ignored: Exception) {
-            throw RuntimeException("Must add a secrets.properties file to set the API_KEY")
-        }
+        val apiKey: String = project.findProperty("apiNinjasApiKey") as String?
+            ?: throw RuntimeException("Please set `apiNinjasApiKey=YOUR_API_KEY` to ~/.gradle/gradle.properties")
 
         // Add API_KEY to BuildConfig
         buildConfigField("String", "API_KEY", "\"" + apiKey + "\"")
