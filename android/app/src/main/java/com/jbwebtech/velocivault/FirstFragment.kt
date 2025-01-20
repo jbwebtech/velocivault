@@ -10,7 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.jbwebtech.velocivault.databinding.FragmentFirstBinding
 import com.velocivault.lib.model.Word
 import com.velocivault.lib.model.WordType
-import com.jbwebtech.velocivault.providers.RandomWordProvider
+import com.velocivault.lib.provider.RandomWordProvider
 import com.jbwebtech.velocivault.vendor.apiNinjas.randomword.ApiNinjasRandomWordRemoteApiProvider
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers

@@ -1,4 +1,4 @@
-package com.jbwebtech.velocivault.providers
+package com.velocivault.lib.provider
 
 import com.velocivault.lib.model.Word
 import com.velocivault.lib.model.WordType

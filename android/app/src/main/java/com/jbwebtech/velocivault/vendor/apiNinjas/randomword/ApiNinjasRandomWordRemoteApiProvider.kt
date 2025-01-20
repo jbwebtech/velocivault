@@ -5,7 +5,7 @@ import com.github.kittinunf.fuel.core.Parameters
 import com.github.kittinunf.fuel.gson.responseObject
 import com.velocivault.lib.model.Word
 import com.velocivault.lib.model.WordType
-import com.jbwebtech.velocivault.providers.RandomWordProvider
+import com.velocivault.lib.provider.RandomWordProvider
 import com.jbwebtech.velocivault.vendor.apiNinjas.ApiNinjasConstants
 
 
