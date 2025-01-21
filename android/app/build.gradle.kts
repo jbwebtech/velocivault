@@ -57,11 +57,6 @@ android {
 
 dependencies {
 
-    implementation(project(":libs"))
-    //    implementation(project(":ext"))
-    implementation(project(":ext:apininjas"))
-    implementation(project(":ext:mock"))
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

@@ -22,7 +22,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "VelociVault"
 include(":app")
-include(":libs")
-include(":ext")
-include(":ext:apininjas")
-include(":ext:mock")
