@@ -1,4 +1,4 @@
-package com.velocivault.lib.model
+package com.jbwebtech.velocivault.model
 
 import com.google.gson.annotations.SerializedName
 
