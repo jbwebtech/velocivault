@@ -86,6 +86,18 @@ class Library {
         return this;
     }
 
+    getSpecialCharacters(num = 1) {
+        return this.specialCharacters[Math.floor(Math.random() * this.specialCharacters.length)];
+    }
+
+    getRandomNumber(num = 1) {
+        let result = '';
+        for (let i = 0; i < num; i++) {
+            result += Math.floor(Math.random() * 10);
+        }
+        return result;
+    }
+
     getRandomWords(num = 1, type = WordType.NONE) {
         switch (type) {
             case WordType.NOUN:
