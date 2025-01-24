@@ -2,20 +2,33 @@ require('dotenv').config();
 const express = require('express');
 
 const repository = require('./repository');
-const { Library, Word, Noun, Verb, Adverb, Adjective } = require('./lib');
 
 const PORT = process.env.PORT || 3000;
 const app = express();
-
-let a ="b";
+const library = repository.getLibrary();
 
 app.get('/', (req, res) => {
     res.status(501).send('API service not implemented at this URL');
 });
 
 app.get('/api/v1/words', (req, res) => {
-    res.json(repository.getLibrary());
+    res.json(library);
 });
+
+app.get('/api/v1/passphrases', (req, res) => {
+    const randomWords = library.getRandomWords(5)
+    const passphrase = randomWords.map(word => word.word.replace(/ /g, '')).join('');
+    res.json({
+        passphrase: passphrase,
+        length: passphrase.length,
+        containsUpper: /[A-Z]/.test(passphrase),
+        containsLower: /[a-z]/.test(passphrase),
+        containsNumber: /[0-9]/.test(passphrase),
+        containsSpecial: /[^A-Za-z0-9]/.test(passphrase),
+        containsWhitespace: /\s/.test(passphrase)
+    });
+});
+
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
