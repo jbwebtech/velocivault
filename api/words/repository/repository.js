@@ -1,5 +1,5 @@
+const Library = require('../model/library');
 const mockData = require('./mock-datastore');
-const { Library } = require('./lib');
 
 const library = new Library();
 
