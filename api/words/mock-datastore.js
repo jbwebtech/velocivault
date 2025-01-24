@@ -35,13 +35,7 @@ const getAdjectives = () => {
 };
 
 const getSpecialCharacters = () => {
-    const chars = [];
-    fs.readdirSync(SPECIAL_CHARACTERS_DIR_PATH).forEach((filename) => {
-        let fileData = fs.readFileSync(path.join(SPECIAL_CHARACTERS_DIR_PATH, filename));
-        let json = JSON.parse(fileData); // array of strings (chars)
-        chars.push(...json);
-    });
-    return chars;
+  return readItemsFromDir(SPECIAL_CHARACTERS_DIR_PATH);
 };
 
 module.exports = {

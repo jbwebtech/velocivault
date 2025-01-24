@@ -1,106 +1,106 @@
 [
-    {
-        "word": "Run",
-        "type": "VERB"
-    },
-    {
-        "word": "Talk",
-        "type": "VERB"
-    },
-    {
-        "word": "Sleep",
-        "type": "VERB"
-    },
-    {
-        "word": "Eat",
-        "type": "VERB"
-    },
-    {
-        "word": "Drink",
-        "type": "VERB"
-    },
-    {
-        "word": "Walk",
-        "type": "VERB"
-    },
-    {
-        "word": "Read",
-        "type": "VERB"
-    },
-    {
-        "word": "Write",
-        "type": "VERB"
-    },
-    {
-        "word": "Listen",
-        "type": "VERB"
-    },
-    {
-        "word": "Watch",
-        "type": "VERB"
-    },
-    {
-        "word": "Think",
-        "type": "VERB"
-    },
-    {
-        "word": "Learn",
-        "type": "VERB"
-    },
-    {
-        "word": "Grow",
-        "type": "VERB"
-    },
-    {
-        "word": "Create",
-        "type": "VERB"
-    },
-    {
-        "word": "Improve",
-        "type": "VERB"
-    },
-    {
-        "word": "Help",
-        "type": "VERB"
-    },
-    {
-        "word": "Support",
-        "type": "VERB"
-    },
-    {
-        "word": "Care",
-        "type": "VERB"
-    },
-    {
-        "word": "Share",
-        "type": "VERB"
-    },
-    {
-        "word": "Give",
-        "type": "VERB"
-    },
-    {
-        "word": "Take",
-        "type": "VERB"
-    },
-    {
-        "word": "Make",
-        "type": "VERB"
-    },
-    {
-        "word": "Do",
-        "type": "VERB"
-    },
-    {
-        "word": "Go",
-        "type": "VERB"
-    },
-    {
-        "word": "Come",
-        "type": "VERB"
-    },
-    {
-        "word": "Know",
-        "type": "VERB"
-    }
+  {
+    "word": "Run",
+    "type": "VERB"
+  },
+  {
+    "word": "Talk",
+    "type": "VERB"
+  },
+  {
+    "word": "Sleep",
+    "type": "VERB"
+  },
+  {
+    "word": "Eat",
+    "type": "VERB"
+  },
+  {
+    "word": "Drink",
+    "type": "VERB"
+  },
+  {
+    "word": "Walk",
+    "type": "VERB"
+  },
+  {
+    "word": "Read",
+    "type": "VERB"
+  },
+  {
+    "word": "Write",
+    "type": "VERB"
+  },
+  {
+    "word": "Listen",
+    "type": "VERB"
+  },
+  {
+    "word": "Watch",
+    "type": "VERB"
+  },
+  {
+    "word": "Think",
+    "type": "VERB"
+  },
+  {
+    "word": "Learn",
+    "type": "VERB"
+  },
+  {
+    "word": "Grow",
+    "type": "VERB"
+  },
+  {
+    "word": "Create",
+    "type": "VERB"
+  },
+  {
+    "word": "Improve",
+    "type": "VERB"
+  },
+  {
+    "word": "Help",
+    "type": "VERB"
+  },
+  {
+    "word": "Support",
+    "type": "VERB"
+  },
+  {
+    "word": "Care",
+    "type": "VERB"
+  },
+  {
+    "word": "Share",
+    "type": "VERB"
+  },
+  {
+    "word": "Give",
+    "type": "VERB"
+  },
+  {
+    "word": "Take",
+    "type": "VERB"
+  },
+  {
+    "word": "Make",
+    "type": "VERB"
+  },
+  {
+    "word": "Do",
+    "type": "VERB"
+  },
+  {
+    "word": "Go",
+    "type": "VERB"
+  },
+  {
+    "word": "Come",
+    "type": "VERB"
+  },
+  {
+    "word": "Know",
+    "type": "VERB"
+  }
 ]

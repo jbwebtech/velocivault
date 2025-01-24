@@ -1,3 +1,116 @@
 [
-    "$", "!", "#", " ", "%", "&", "(", ")", "*", "+", "-", ".", ":", ";", "<", "=", ">", "?", "@", "[", "]", "^", "_", "`", "{", "|", "}", "~"
+  {
+    "word": "$",
+    "type": "CHAR"
+  },
+  {
+    "word": "!",
+    "type": "CHAR"
+  },
+  {
+    "word": "#",
+    "type": "CHAR"
+  },
+  {
+    "word": " ",
+    "type": "CHAR"
+  },
+  {
+    "word": "%",
+    "type": "CHAR"
+  },
+  {
+    "word": "&",
+    "type": "CHAR"
+  },
+  {
+    "word": "(",
+
+    "type": "CHAR"
+  },
+  {
+    "word": ")",
+    "type": "CHAR"
+  },
+  {
+    "word": "*",
+    "type": "CHAR"
+  },
+  {
+    "word": "+",
+    "type": "CHAR"
+  },
+  {
+    "word": "-",
+    "type": "CHAR"
+  },
+  {
+    "word": ".",
+    "type": "CHAR"
+  },
+  {
+    "word": ":",
+    "type": "CHAR"
+  },
+  {
+    "word": ";",
+    "type": "CHAR"
+  },
+  {
+    "word": "<",
+    "type": "CHAR"
+  },
+  {
+    "word": "=",
+    "type": "CHAR"
+  },
+  {
+    "word": ">",
+    "type": "CHAR"
+  },
+  {
+    "word": "?",
+    "type": "CHAR"
+  },
+  {
+    "word": "@",
+    "type": "CHAR"
+  },
+  {
+    "word": "[",
+    "type": "CHAR"
+  },
+  {
+    "word": "]",
+    "type": "CHAR"
+  },
+  {
+    "word": "^",
+    "type": "CHAR"
+  },
+  {
+    "word": "_",
+    "type": "CHAR"
+  },
+  {
+    "word": "`",
+    "type": "CHAR"
+  },
+  {
+    "word": "{",
+    "type": "CHAR"
+  },
+  {
+    "word": "|",
+    "type": "CHAR"
+  },
+  {
+    "word": "}",
+
+    "type": "CHAR"
+  },
+  {
+    "word": "~",
+    "type": "CHAR"
+  }
 ]
