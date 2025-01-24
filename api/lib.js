@@ -75,6 +75,27 @@ class Library {
     getWords() {
         return this;
     }
+
+    getRandomWords(num = 1, type = WordType.NONE) {
+        switch (type) {
+            case WordType.NOUN:
+                return this.nouns[Math.floor(Math.random() * this.nouns.length)];
+            case WordType.VERB:
+                return this.verbs[Math.floor(Math.random() * this.verbs.length)];
+            case WordType.ADVERB:
+                return this.adverbs[Math.floor(Math.random() * this.adverbs.length)];
+            case WordType.ADJECTIVE:
+                return this.adjectives[Math.floor(Math.random() * this.adjectives.length)];
+            default:
+                const allWords = [...this.nouns, ...this.verbs, ...this.adverbs, ...this.adjectives];
+                const randomWords = [];
+                for (let i = 0; i < num; i++) {
+                    const randomIndex = Math.floor(Math.random() * allWords.length);
+                    randomWords.push(allWords.splice(randomIndex, 1)[0]);
+                }
+                return randomWords;
+        }
+    }
 }
 
 
