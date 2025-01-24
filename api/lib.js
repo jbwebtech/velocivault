@@ -43,28 +43,38 @@ class Library {
         this.verbs = [];
         this.adverbs = [];
         this.adjectives = [];
+        this.specialCharacters = [];
+    }
+
+    addSpecialCharacters(characters) {
+        this.specialCharacters.push(...characters);
     }
 
     addWord(word) {
-        const t = WordType[word.type.toUpperCase()];
-        if (!t) {
-            console.error(`Invalid word type: ${word.type}`);
-            return;
+        if (word instanceof Word) {
+            this.words.push(word);
         }
-        const w = new Word(word.word, t);
-        switch (t) {
-            case WordType.NOUN:
-                this.nouns.push(w);
-                break;
-            case WordType.VERB:
-                this.verbs.push(w);
-                break;
-            case WordType.ADVERB:
-                this.adverbs.push(w);
-                break;
-            case WordType.ADJECTIVE:
-                this.adjectives.push(w);
-                break;
+        else {
+            const t = WordType[word.type.toUpperCase()];
+            if (!t) {
+                console.error(`Invalid word type: ${word.type}`);
+                return;
+            }
+            const w = new Word(word.word, t);
+            switch (t) {
+                case WordType.NOUN:
+                    this.nouns.push(w);
+                    break;
+                case WordType.VERB:
+                    this.verbs.push(w);
+                    break;
+                case WordType.ADVERB:
+                    this.adverbs.push(w);
+                    break;
+                case WordType.ADJECTIVE:
+                    this.adjectives.push(w);
+                    break;
+            }
         }
     }
 
