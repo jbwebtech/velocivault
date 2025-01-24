@@ -1,7 +1,8 @@
 require('dotenv').config();
 const express = require('express');
 
-const { Word, Noun, Verb, Adverb, Adjective } = require('./lib');
+const repository = require('./repository');
+const { Library, Word, Noun, Verb, Adverb, Adjective } = require('./lib');
 
 const PORT = process.env.PORT || 3000;
 const app = express();
@@ -13,18 +14,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api/v1/words', (req, res) => {
-    res.json([
-        new Word('Aye-Aye'),
-        new Word('Dik-Dik'),
-        new Word('Fennec'),
-        new Word('Gazelle'),
-        new Word('Hedgehog'),
-        new Word('Ibex'),
-        new Word('Jaguarundi'),
-        new Word('Kinkajou'),
-        new Word('Lemur'),
-        new Word('Mongoose')
-    ]);
+    res.json(repository.getLibrary());
 });
 
 app.listen(PORT, () => {

@@ -1,0 +1,394 @@
+[
+  {
+    "word": "Aye-Aye",
+    "type": "NOUN"
+  },
+  {
+    "word": "Goblin Shark",
+    "type": "NOUN"
+  },
+  {
+    "word": "Pangolin",
+    "type": "NOUN"
+  },
+  {
+    "word": "Dik-Dik",
+    "type": "NOUN"
+  },
+  {
+    "word": "Okapi",
+    "type": "NOUN"
+  },
+  {
+    "word": "Axolotl",
+    "type": "NOUN"
+  },
+  {
+    "word": "Narwhal",
+    "type": "NOUN"
+  },
+  {
+    "word": "Quokka",
+    "type": "NOUN"
+  },
+  {
+    "word": "Kakapo",
+    "type": "NOUN"
+  },
+  {
+    "word": "Shoebill",
+    "type": "NOUN"
+  },
+  {
+    "word": "Frill-Necked Lizard",
+    "type": "NOUN"
+  },
+  {
+    "word": "Honey Badger",
+    "type": "NOUN"
+  },
+  {
+    "word": "Wombat",
+    "type": "NOUN"
+  },
+  {
+    "word": "Blobfish",
+    "type": "NOUN"
+  },
+  {
+    "word": "Spectacled Bear",
+    "type": "NOUN"
+  },
+  {
+    "word": "Maned Wolf",
+    "type": "NOUN"
+  },
+  {
+    "word": "Fossa",
+    "type": "NOUN"
+  },
+  {
+    "word": "Gerenuk",
+    "type": "NOUN"
+  },
+  {
+    "word": "Indian Star Tortoise",
+    "type": "NOUN"
+  },
+  {
+    "word": "Thorny Devil",
+    "type": "NOUN"
+  },
+  {
+    "word": "Dragon",
+    "type": "NOUN"
+  },
+  {
+    "word": "Unicorn",
+    "type": "NOUN"
+  },
+  {
+    "word": "Muppet",
+    "type": "NOUN"
+  },
+  {
+    "word": "Cyclops",
+    "type": "NOUN"
+  },
+  {
+    "word": "Snuffleupagus",
+    "type": "NOUN"
+  },
+  {
+    "word": "Chimera",
+    "type": "NOUN"
+  },
+  {
+    "word": "Phoenix",
+    "type": "NOUN"
+  },
+  {
+    "word": "Minotaur",
+    "type": "NOUN"
+  },
+  {
+    "word": "Griffin",
+    "type": "NOUN"
+  },
+  {
+    "word": "Kraken",
+    "type": "NOUN"
+  },
+  {
+    "word": "Centaur",
+    "type": "NOUN"
+  },
+  {
+    "word": "Pegasus",
+    "type": "NOUN"
+  },
+  {
+    "word": "Sasquatch",
+    "type": "NOUN"
+  },
+  {
+    "word": "Yeti",
+    "type": "NOUN"
+  },
+  {
+    "word": "Basilisk",
+    "type": "NOUN"
+  },
+  {
+    "word": "Hippogriff",
+    "type": "NOUN"
+  },
+  {
+    "word": "Kelpie",
+    "type": "NOUN"
+  },
+  {
+    "word": "Mermaid",
+    "type": "NOUN"
+  },
+  {
+    "word": "Niffler",
+    "type": "NOUN"
+  },
+  {
+    "word": "Wendigo",
+    "type": "NOUN"
+  },
+  {
+    "word": "Goblin",
+    "type": "NOUN"
+  },
+  {
+    "word": "Spriggan",
+    "type": "NOUN"
+  },
+  {
+    "word": "Hobbit",
+    "type": "NOUN"
+  },
+  {
+    "word": "Leprechaun",
+    "type": "NOUN"
+  },
+  {
+    "word": "Siren",
+    "type": "NOUN"
+  },
+  {
+    "word": "Dryad",
+    "type": "NOUN"
+  },
+  {
+    "word": "Fairy",
+    "type": "NOUN"
+  },
+  {
+    "word": "Werewolf",
+    "type": "NOUN"
+  },
+  {
+    "word": "Vampire",
+    "type": "NOUN"
+  },
+  {
+    "word": "Pika",
+    "type": "NOUN"
+  },
+  {
+    "word": "Sea Cucumber",
+    "type": "NOUN"
+  },
+  {
+    "word": "Armadillo",
+    "type": "NOUN"
+  },
+  {
+    "word": "Cassowary",
+    "type": "NOUN"
+  },
+  {
+    "word": "Jerboa",
+    "type": "NOUN"
+  },
+  {
+    "word": "Tufted Puffin",
+    "type": "NOUN"
+  },
+  {
+    "word": "Bush Baby",
+    "type": "NOUN"
+  },
+  {
+    "word": "Saiga Antelope",
+    "type": "NOUN"
+  },
+  {
+    "word": "Dhole",
+    "type": "NOUN"
+  },
+  {
+    "word": "Flying Fox",
+    "type": "NOUN"
+  },
+  {
+    "word": "Red Panda",
+    "type": "NOUN"
+  },
+  {
+    "word": "Markhor",
+    "type": "NOUN"
+  },
+  {
+    "word": "Tarsier",
+    "type": "NOUN"
+  },
+  {
+    "word": "Vaquita",
+    "type": "NOUN"
+  },
+  {
+    "word": "Mudskipper",
+    "type": "NOUN"
+  },
+  {
+    "word": "Binturong",
+    "type": "NOUN"
+  },
+  {
+    "word": "Hoatzin",
+    "type": "NOUN"
+  },
+  {
+    "word": "Sun Bear",
+    "type": "NOUN"
+  },
+  {
+    "word": "Indian Pangolin",
+    "type": "NOUN"
+  },
+  {
+    "word": "Sifaka",
+    "type": "NOUN"
+  },
+  {
+    "word": "Dragon Turtle",
+    "type": "NOUN"
+  },
+  {
+    "word": "Hydra",
+    "type": "NOUN"
+  },
+  {
+    "word": "Cockatrice",
+    "type": "NOUN"
+  },
+  {
+    "word": "Behemoth",
+    "type": "NOUN"
+  },
+  {
+    "word": "Balrog",
+    "type": "NOUN"
+  },
+  {
+    "word": "Demon",
+    "type": "NOUN"
+  },
+  {
+    "word": "Imp",
+    "type": "NOUN"
+  },
+  {
+    "word": "Gremlin",
+    "type": "NOUN"
+  },
+  {
+    "word": "Brownie",
+    "type": "NOUN"
+  },
+  {
+    "word": "Boggart",
+    "type": "NOUN"
+  },
+  {
+    "word": "Pooka",
+    "type": "NOUN"
+  },
+  {
+    "word": "Selkie",
+    "type": "NOUN"
+  },
+  {
+    "word": "Chupacabra",
+    "type": "NOUN"
+  },
+  {
+    "word": "Cerberus",
+    "type": "NOUN"
+  },
+  {
+    "word": "Hellhound",
+    "type": "NOUN"
+  },
+  {
+    "word": "Manticore",
+    "type": "NOUN"
+  },
+  {
+    "word": "Sphinx",
+    "type": "NOUN"
+  },
+  {
+    "word": "Troll",
+    "type": "NOUN"
+  },
+  {
+    "word": "Ogre",
+    "type": "NOUN"
+  },
+  {
+    "word": "Lich",
+    "type": "NOUN"
+  },
+  {
+    "word": "Shade",
+    "type": "NOUN"
+  },
+  {
+    "word": "Wraith",
+    "type": "NOUN"
+  },
+  {
+    "word": "Specter",
+    "type": "NOUN"
+  },
+  {
+    "word": "Poltergeist",
+    "type": "NOUN"
+  },
+  {
+    "word": "Zombie",
+    "type": "NOUN"
+  },
+  {
+    "word": "Ghoul",
+    "type": "NOUN"
+  },
+  {
+    "word": "Banshee",
+    "type": "NOUN"
+  },
+  {
+    "word": "Frost Giant",
+    "type": "NOUN"
+  },
+  {
+    "word": "Jabberwock",
+    "type": "NOUN"
+  }
+]

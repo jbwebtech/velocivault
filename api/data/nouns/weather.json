@@ -1,0 +1,106 @@
+[
+  {
+    "word": "Thunderstorm",
+    "type": "NOUN"
+  },
+  {
+    "word": "Tornado",
+    "type": "NOUN"
+  },
+  {
+    "word": "Hurricane",
+    "type": "NOUN"
+  },
+  {
+    "word": "Blizzard",
+    "type": "NOUN"
+  },
+  {
+    "word": "Cyclone",
+    "type": "NOUN"
+  },
+  {
+    "word": "Sleet",
+    "type": "NOUN"
+  },
+  {
+    "word": "Hailstorm",
+    "type": "NOUN"
+  },
+  {
+    "word": "Drizzle",
+    "type": "NOUN"
+  },
+  {
+    "word": "Heatwave",
+    "type": "NOUN"
+  },
+  {
+    "word": "Rainstorm",
+    "type": "NOUN"
+  },
+  {
+    "word": "Fog",
+    "type": "NOUN"
+  },
+  {
+    "word": "Drought",
+    "type": "NOUN"
+  },
+  {
+    "word": "Cloudburst",
+    "type": "NOUN"
+  },
+  {
+    "word": "Mist",
+    "type": "NOUN"
+  },
+  {
+    "word": "Windstorm",
+    "type": "NOUN"
+  },
+  {
+    "word": "Monsoon",
+    "type": "NOUN"
+  },
+  {
+    "word": "Tsunami",
+    "type": "NOUN"
+  },
+  {
+    "word": "Thunder",
+    "type": "NOUN"
+  },
+  {
+    "word": "Lightning",
+    "type": "NOUN"
+  },
+  {
+    "word": "Gale",
+    "type": "NOUN"
+  },
+  {
+    "word": "Squall",
+    "type": "NOUN"
+  },
+  {
+    "word": "Frost",
+    "type": "NOUN"
+  },
+  {
+    "word": "Snowfall",
+    "type": "NOUN"
+  },
+  {
+    "word": "Sunshine",
+    "type": "NOUN"
+  },
+  {
+    "word": "Clouds",
+    "type": "NOUN"
+  },
+  {
+    "word": "Overcast",
+    "type": "NOUN"
+  }
+]
