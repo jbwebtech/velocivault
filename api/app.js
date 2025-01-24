@@ -16,8 +16,8 @@ app.get('/api/v1/words', (req, res) => {
 });
 
 app.get('/api/v1/passphrases', (req, res) => {
-    const randomWords = library.getRandomWords(5)
-    const passphrase = randomWords.map(word => word.word.replace(/ /g, '')).join('');
+    const randomWords = library.getRandomWords(5).map(word => word.word.replace(/ /g, ''));
+    const passphrase = randomWords.map(word => library.getSpecialCharacters(1) + library.getRandomNumber(1) + word).join('');
     res.json({
         passphrase: passphrase,
         length: passphrase.length,
