@@ -1,0 +1,326 @@
+[
+    {
+        "word": "Discouraging",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Affable",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Ambitious",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Ancient",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Artistic",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Adventurous",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Aggressive",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Attractive",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Austere",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Authoritative",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Brilliant",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Bold",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Brave",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Bright",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Calm",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Charming",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Clever",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Cautious",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Careful",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Creative",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Cruel",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Curious",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Daring",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Decisive",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Demanding",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Dignified",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Elegant",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Enthusiastic",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Exuberant",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Fierce",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Firm",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Flexible",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Formal",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Friendly",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Gentle",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Honest",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Imaginative",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Independent",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Innovative",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Inquisitive",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Insightful",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Intelligent",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Inventive",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Jovial",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Lively",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Loyal",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Mature",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Meticulous",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Mysterious",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Nimble",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Optimistic",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Organized",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Patient",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Persistent",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Philosophical",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Pioneering",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Pleasant",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Polite",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Powerful",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Practical",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Precise",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Prepared",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Quirky",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Resourceful",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Respectful",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Rugged",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Serious",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Sincere",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Sophisticated",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Spontaneous",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Stoic",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Strong",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Stylish",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Tenacious",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Tireless",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Trusting",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Unpredictable",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Vigilant",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Vivacious",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Warm",
+        "type": "ADJECTIVE"
+    },
+    {
+        "word": "Wise",
+        "type": "ADJECTIVE"
+    }
+]
