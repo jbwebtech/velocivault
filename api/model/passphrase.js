@@ -10,6 +10,7 @@ class Passphrase {
     if (!passphrase || !passphrase.trim()) {
       throw new Error("Invalid passphrase!");
     }
+    this.id = crypto.randomUUID();
     this.passphrase = passphrase;
     this.length = passphrase.length;
     this.containsUpper = /[A-Z]/.test(passphrase);
