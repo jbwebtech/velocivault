@@ -16,8 +16,14 @@ app.get('/api/v1/words', (req, res) => {
 });
 
 app.get('/api/v1/passphrases', (req, res) => {
-    const randomWords = library.getRandomWords(5).map(word => word.word.replace(/ /g, ''));
-    const passphrase = randomWords.map(word => library.getSpecialCharacters(1) + library.getRandomNumber(1) + word).join('');
+    const randomWords = library.getRandomWords(3).map(word => word.word.replace(/ /g, ''));
+    const passphrase = randomWords.map(word => 
+        library.getSpecialCharacters(1) +
+        library.getRandomNumber(1) +
+        word + 
+        library.getSpecialCharacters(1) +
+        library.getRandomNumber(1)
+    ).join('');
     res.json({
         passphrase: passphrase,
         length: passphrase.length,
@@ -25,7 +31,7 @@ app.get('/api/v1/passphrases', (req, res) => {
         containsLower: /[a-z]/.test(passphrase),
         containsNumber: /[0-9]/.test(passphrase),
         containsSpecial: /[^A-Za-z0-9]/.test(passphrase),
-        containsWhitespace: /\s/.test(passphrase)
+        containsWhitespace: /\s/.test(passphrase),
     });
 });
 
