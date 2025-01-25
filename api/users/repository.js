@@ -17,14 +17,16 @@ class UserRepository {
       throw new Error("Invalid user type!  Must be an instance of User");
     }
 
-    if (!user.id || !user.name || !user.email || !user.password) {
-      throw new Error("Invalid user data!");
-    }
+    this.create(user.name, user.email, user.password);
 
     this.users.push(user);
   }
 
   create(name, email, password) {
+    if (!name || !email || !password) {
+      throw new Error("Invalid user data!");
+    }
+
     const user = new User(name, email, password);
     this.add(user);
     return user;
@@ -38,7 +40,24 @@ class UserRepository {
     return this.users.find((user) => user.id === id);
   }
 
-  all() {
+  update(user) {
+    const ix = this.users.findIndex((u) => u.id === user.id);
+    if (ix !== -1) {
+      this.users[ix] = user;
+    } else {
+      this.add(user);
+    }
+    return this.findById(user.id);
+  }
+
+  delete(id) {
+    const ix = this.users.findIndex((u) => u.id === id);
+    if (ix !== -1) {
+      this.users.splice(ix, 1);
+    }
+  }
+
+  getAll() {
     return this.users;
   }
 }
