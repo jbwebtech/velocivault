@@ -1,4 +1,4 @@
-class WordType {
+export default class WordType {
   static NONE = "NONE";
   static NOUN = "NOUN";
   static VERB = "VERB";
@@ -18,5 +18,3 @@ class WordType {
   static PHRASAL = "PHRASAL";
   static CHAR = "CHAR";
 }
-
-module.exports = WordType;

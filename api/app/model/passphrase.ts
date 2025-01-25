@@ -1,16 +1,27 @@
-class Passphrase {
+import { randomUUID } from 'crypto';
+
+export default class Passphrase {
+  public id: string;
+  public passphrase: string;
+  public length: number;
+  public containsUpper: boolean;
+  public containsLower: boolean;
+  public containsNumber: boolean;
+  public containsSpecial: boolean;
+  public containsWhitespace: boolean;
+
   /**
    * Creates a new Passphrase object, which tests the given passphrase
    * for length, and the presence of uppercase letters, lowercase letters,
    * numbers, special characters, and whitespace.
    *
-   * @param {string} passphrase
+   * @param passphrase {string}
    */
-  constructor(passphrase) {
+  constructor(passphrase: string) {
     if (!passphrase || !passphrase.trim()) {
       throw new Error("Invalid passphrase!");
     }
-    this.id = crypto.randomUUID();
+    this.id = randomUUID();
     this.passphrase = passphrase;
     this.length = passphrase.length;
     this.containsUpper = /[A-Z]/.test(passphrase);
@@ -21,4 +32,3 @@ class Passphrase {
   }
 }
 
-module.exports = Passphrase;
