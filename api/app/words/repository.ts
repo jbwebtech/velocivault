@@ -1,13 +1,15 @@
-const Library = require("../model/library");
-const mockData = require("./mock-datastore");
+import Library from '../model/library';
+import * as mockData from './mock-datastore';
 
-class WordRepository {
+export default class WordRepository {
+  private readonly library: Library;
+
   constructor() {
     this.library = new Library();
     this.loadMockData();
   }
 
-  loadMockData() {
+  private loadMockData(): void {
     this.library.addWords(mockData.getNouns());
     this.library.addWords(mockData.getVerbs());
     this.library.addWords(mockData.getAdverbs());
@@ -16,9 +18,7 @@ class WordRepository {
     console.log("Mock data loaded.");
   }
 
-  getLibrary() {
+  getLibrary(): Library {
     return this.library;
   }
 }
-
-module.exports = WordRepository;

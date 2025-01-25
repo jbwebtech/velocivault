@@ -1,7 +1,7 @@
 [
     {
         "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
-        "name": "John Doe",
+        "name": "Johhny Doe",
         "email": "xHv7D@example.com",
         "password": "password123"
     },
