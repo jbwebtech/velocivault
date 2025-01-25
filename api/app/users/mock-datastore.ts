@@ -5,6 +5,11 @@ const BASE_DIR_PATH = "./mock/";
 const USERS_DIR_PATH = path.join(BASE_DIR_PATH, "users");
 
 const readItemsFromDir = (dirPath: string): any[] => {
+  console.log(`Reading mock Users from: ${dirPath}`);
+  console.log(`Current working directory: ${process.cwd()}`);
+  console.log(`__dirname is: ${__dirname}`);
+  console.log(`Completed reading files from: ${dirPath}`);
+
   const items: any[] = [];
   fs.readdirSync(dirPath).forEach((filename: string) => {
     const fileData: Buffer = fs.readFileSync(path.join(dirPath, filename));

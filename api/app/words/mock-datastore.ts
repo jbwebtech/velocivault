@@ -9,6 +9,11 @@ const ADJECTIVES_DIR_PATH = path.join(BASE_DIR_PATH, 'adjectives');
 const SPECIAL_CHARACTERS_DIR_PATH = path.join(BASE_DIR_PATH, 'chars');
 
 const readItemsFromDir = (dirPath: string): any[] => {
+  console.log(`Reading mock Words from: ${dirPath}`);
+  console.log(`Current working directory: ${process.cwd()}`);
+  console.log(`__dirname is: ${__dirname}`);
+  console.log(`Completed reading files from: ${dirPath}`);
+
   const items: any[] = [];
   fs.readdirSync(dirPath).forEach((filename: string) => {
     const fileData: Buffer = fs.readFileSync(path.join(dirPath, filename));
