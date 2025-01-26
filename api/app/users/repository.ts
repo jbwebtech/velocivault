@@ -11,7 +11,7 @@ export default class UserRepository {
 
   loadMockData(): void {
     this.users.push(...mockData.getUsers());
-    console.log("Mock data loaded.");
+    console.log("Mock data loaded: Users");
   }
 
   add(user: User): User {

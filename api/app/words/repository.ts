@@ -15,7 +15,7 @@ export default class WordRepository {
     this.library.addWords(mockData.getAdverbs());
     this.library.addWords(mockData.getAdjectives());
     this.library.addSpecialCharacters(mockData.getSpecialCharacters());
-    console.log("Mock data loaded.");
+    console.log("Mock data loaded: Words");
   }
 
   getLibrary(): Library {
