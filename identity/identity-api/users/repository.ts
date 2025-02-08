@@ -1,24 +1,29 @@
 import User from '../model/user';
-import * as mockData from './mock-datastore';
+import UserDatastore from './datastore';
 
 export default class UserRepository {
-  private readonly users: User[] = [];
+  private readonly cache: User[] = [];
+  private readonly datastore: UserDatastore;
 
-  constructor() {
-    this.users = [];
-    this.loadMockData();
+  constructor(datastore: UserDatastore) {
+    this.cache = [];
+    this.datastore = datastore;
+
+    this.preLoadAllUsers();
   }
 
-  loadMockData(): void {
-    this.users.push(...mockData.getUsers());
-    console.log("Mock data loaded: Users");
+  preLoadAllUsers(): void {
+    this.datastore.getAll().then((users: User[]) => {
+      this.cache.push(...users);
+      console.log(`Loaded ${this.cache.length} users from ${this.datastore.constructor.name}.`);
+    });
   }
 
   add(user: User): User {
-    if (this.users.find((u) => u.id === user.id)) {
+    if (this.cache.find((u) => u.id === user.id)) {
       throw new Error("User already exists!");
     }
-    this.users.push(user);
+    this.cache.push(user);
     return user;
   }
 
@@ -33,17 +38,17 @@ export default class UserRepository {
   }
 
   findByEmail(email: string): User | undefined {
-    return this.users.find((user) => user.email === email);
+    return this.cache.find((user) => user.email === email);
   }
 
   findById(id: string): User | undefined {
-    return this.users.find((user) => user.id === id);
+    return this.cache.find((user) => user.id === id);
   }
 
   update(user: User): User | undefined {
-    const ix: number = this.users.findIndex((u) => u.id === user.id);
+    const ix: number = this.cache.findIndex((u) => u.id === user.id);
     if (ix !== -1) {
-      this.users[ix] = user;
+      this.cache[ix] = user;
     } else {
       this.add(user);
     }
@@ -51,14 +56,14 @@ export default class UserRepository {
   }
 
   delete(id: string): boolean {
-    const ix: number = this.users.findIndex((u) => u.id === id);
+    const ix: number = this.cache.findIndex((u) => u.id === id);
     if (ix !== -1) {
-      this.users.splice(ix, 1);
+      this.cache.splice(ix, 1);
     }
     return (ix !== -1);
   }
 
   getAll(): User[] {
-    return this.users;
+    return this.cache;
   }
 }
