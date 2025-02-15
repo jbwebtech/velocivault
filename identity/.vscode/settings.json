@@ -1,6 +1,18 @@
 {
-    "cSpell.words": [
-        "Veloci"
-    ],
-    "postman.settings.dotenv-detection-notification-visibility": false
+  "cSpell.words": ["Veloci"],
+  "postman.settings.dotenv-detection-notification-visibility": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOptions": {
+      "indentSize": 2
+    }
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOptions": {
+      "indentSize": 2
+    }
+  },
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true
 }
