@@ -1,9 +1,9 @@
 import "dotenv/config";
-import Application from "express";
+import {Application}  from "express";
 import express from "express";
 import bodyParser from "body-parser";
 
-import UserInitializer from "./users/initializer";
+import UserInitializer from "./infrastructure/user-initializer";
 
 const identity: Application = express();
 const PORT: number = parseInt(process.env.PORT as string, 10) || 3006;

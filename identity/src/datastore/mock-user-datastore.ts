@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 
 import User from "../model/user";
-import UserDatastore from "./datastore";
+import UserDatastore from "./user-datastore";
 
 const BASE_DIR_PATH = path.join((process.env.ASSETS_PATH || "./assets"), "data", "mock");
 const USERS_DIR_PATH = path.join(BASE_DIR_PATH, "users");

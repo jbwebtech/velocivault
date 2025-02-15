@@ -1,10 +1,10 @@
-import Application from "express";
+import {Application} from "express";
 
-import UserController from "./controller";
-import UserRepository from "./repository";
-import UserRoutes from "./routes";
-import UserDatastore from "./datastore";
-import MockUserDatastore from "./mock-datastore";
+import UserController from "../controller/user-controller";
+import UserRepository from "../repository/user-repository";
+import UserRoutes from "../route/user-routes";
+import UserDatastore from "../datastore/user-datastore";
+import MockUserDatastore from "../datastore/mock-user-datastore";
 
 export default class UserInitializer {
   static registerRoutes(expressApp: Application): void{

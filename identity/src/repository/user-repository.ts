@@ -1,12 +1,13 @@
-import User from '../model/user';
-import UserDatastore from './datastore';
+import User from "../model/user";
+import UserDatastore from "../datastore/user-datastore";
 
 export default class UserRepository {
+  // TODO - verify cache works as expected
+  // TODO - add calls to datastore
   private readonly cache: User[] = [];
   private readonly datastore: UserDatastore;
 
   constructor(datastore: UserDatastore) {
-    this.cache = [];
     this.datastore = datastore;
 
     this.preLoadAllUsers();
@@ -15,7 +16,9 @@ export default class UserRepository {
   preLoadAllUsers(): void {
     this.datastore.getAll().then((users: User[]) => {
       this.cache.push(...users);
-      console.log(`Loaded ${this.cache.length} users from ${this.datastore.constructor.name}.`);
+      console.log(
+        `Loaded ${this.cache.length} users from ${this.datastore.constructor.name}.`
+      );
     });
   }
 
@@ -24,6 +27,7 @@ export default class UserRepository {
       throw new Error("User already exists!");
     }
     this.cache.push(user);
+    this.datastore.create(user);
     return user;
   }
 
@@ -38,10 +42,12 @@ export default class UserRepository {
   }
 
   findByEmail(email: string): User | undefined {
+    // TODO - consider returning { user: User, ix: number}
     return this.cache.find((user) => user.email === email);
   }
 
   findById(id: string): User | undefined {
+    // TODO - consider returning { user: User, ix: number}
     return this.cache.find((user) => user.id === id);
   }
 
@@ -52,6 +58,7 @@ export default class UserRepository {
     } else {
       this.add(user);
     }
+    this.datastore.update(user);
     return this.findById(user.id);
   }
 
@@ -60,7 +67,8 @@ export default class UserRepository {
     if (ix !== -1) {
       this.cache.splice(ix, 1);
     }
-    return (ix !== -1);
+    this.datastore.delete(id);
+    return ix !== -1;
   }
 
   getAll(): User[] {
